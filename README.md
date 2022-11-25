@@ -1,2 +1,2 @@
 # fantastic-palm-tree
-DevOps Resources 
+This is my personal Repository Showcasing my projects and the roadmaps & resources I followeed so far to learn about DevOps 

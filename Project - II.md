@@ -38,3 +38,40 @@
 
 ![image](https://user-images.githubusercontent.com/76660222/210221171-7c041871-d8cf-47b5-a747-4e21f08fa1fe.png)
 
+* Next step is to install the **dotenv** module. Run this code: `npm install dotenv`
+![image](https://user-images.githubusercontent.com/76660222/210225264-28898c0d-2a0a-4193-9d98-12424e0c3373.png)
+
+* Then open the **index.js** file with this command: `vim index.js`
+* Type the code below into it and save:
+
+```
+const express = require('express');
+require('dotenv').config();
+
+const app = express();
+
+const port = process.env.PORT || 5000;
+
+app.use((req, res, next) => {
+res.header("Access-Control-Allow-Origin", "\*");
+res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+next();
+});
+
+app.use((req, res, next) => {
+res.send('Welcome to Express');
+});
+
+app.listen(port, () => {
+console.log(`Server running on port ${port}`)
+});
+```
+
+* Use **:w** to save in vim and use **:qa** to exit vim
+
+![image](https://user-images.githubusercontent.com/76660222/210225452-4a98ea01-7736-4ccf-95fe-e0963beb8fc4.png)
+
+* Test start the server to see if it works. Type: `node index.js`
+* You should see Server running on port 5000 in the terminal.
+
+![image](https://user-images.githubusercontent.com/76660222/210226425-90c4cc79-75d9-455a-804c-991430b88b47.png)

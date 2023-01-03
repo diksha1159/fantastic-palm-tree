@@ -75,3 +75,71 @@ console.log(`Server running on port ${port}`)
 * You should see Server running on port 5000 in the terminal.
 
 ![image](https://user-images.githubusercontent.com/76660222/210226425-90c4cc79-75d9-455a-804c-991430b88b47.png)
+
+* Next, open port 5000 in EC2 Security Groups and save changes.
+* Open a browser and access the server’s Public IP or Public DNS name followed by port 5000: `http://<PublicIP-or-PublicDNS>:5000`
+
+![image](https://user-images.githubusercontent.com/76660222/210299881-00ad75d8-e081-45d4-ad94-e17540a42df9.png)
+
+#### Routes
+
+* The To-Do application needs to be able to complete 3 actions:
+  * Create a new task
+  * Display list of all tasks
+  * Delete a completed task
+* For each task, we need to create routes that will define various endpoints that the To-do app will depend on. Create a folder called **routes** with this command `mkdir routes`
+* Change directory to **routes** folder and create a file **api.js** with the command: `touch api.js`
+
+![image](https://user-images.githubusercontent.com/76660222/210300171-99ab879a-89f8-46b1-b863-9a149a90a420.png)
+
+* Open the file with the command below `vim api.js`
+* Copy and save the code below into the file:
+
+```
+const express = require ('express');
+const router = express.Router();
+
+router.get('/todos', (req, res, next) => {
+
+});
+
+router.post('/todos', (req, res, next) => {
+
+});
+
+router.delete('/todos/:id', (req, res, next) => {
+
+})
+
+module.exports = router;
+```
+
+![image](https://user-images.githubusercontent.com/76660222/210300561-bb9b91db-2bb7-4a18-8f90-a6709e619ad5.png)
+
+![image](https://user-images.githubusercontent.com/76660222/210300644-ffca79e8-3cf3-4147-ab20-8ef7b2d1f1e8.png)
+
+
+##### MODELS
+
+* To create a Schema and a model, install mongoose which is a Node.js package that makes working with mongodb easier. Change directory back Todo folder with `cd ..` and install Mongoose with the following command: `npm install mongoose`
+* Create a new folder  **models** , then change directory into the newly created **models** folder, Inside the models folder, create a file and name it **todo.js** with the following command: `mkdir models && cd models && touch todo.js`
+* Open the file created with vim todo.js then paste the code below in the file:
+
+```
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+//create schema for todo
+const TodoSchema = new Schema({
+action: {
+type: String,
+required: [true, 'The todo text field is required']
+}
+})
+
+//create model for todo
+const Todo = mongoose.model('todo', TodoSchema);
+
+module.exports = Todo;
+```
+

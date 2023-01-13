@@ -194,13 +194,24 @@ module.exports = router;
 
 ![image](https://user-images.githubusercontent.com/76660222/212307676-d3e2a9d5-af36-402e-bbaa-b3502c5480a0.png)
 
+![image](https://user-images.githubusercontent.com/76660222/212313582-2f275a2a-42b3-415a-b26c-885e50f42871.png)
+
+![image](https://user-images.githubusercontent.com/76660222/212309255-956fd2af-04b8-462c-a315-bfbc92fc9e51.png)
+
+
 
 * For the purposes of this project, allow access to the MongoDB database from anywhere.
 * Make sure you change the time of deleting the entry from 6 Hours to 1 Week
+
+![image](https://user-images.githubusercontent.com/76660222/212312977-243b117b-77c4-44fd-bdc1-8a24815e611a.png)
+![image](https://user-images.githubusercontent.com/76660222/212313257-04d16bfb-662b-4474-9644-7375374ca6e2.png)
+![image](https://user-images.githubusercontent.com/76660222/212315169-c321379f-0097-4472-9953-1843646652bf.png)
+![image](https://user-images.githubusercontent.com/76660222/212315323-881a6203-bf7f-448b-b3da-9b9104c66687.png)
+
+
 * Create a MongoDB database and collection inside mLab
 
 
 
-![image](https://user-images.githubusercontent.com/76660222/212309255-956fd2af-04b8-462c-a315-bfbc92fc9e51.png)
 
 

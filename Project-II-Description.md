@@ -42,3 +42,10 @@ Dotenv is a zero-dependency module that loads environment variables from a . env
 
 
 https://coding-boot-camp.github.io/full-stack/mongodb/how-to-set-up-mongodb-atlas
+
+Q. what is the difference between a cluster and database in mongodb atlas
+Ans. 
+In contrast to a single-server MongoDB database, a MongoDB cluster allows a MongoDB database to either horizontally scale across many servers with sharding, or to replicate data ensuring high availability with MongoDB replica sets, therefore enhancing the overall performance and reliability of the MongoDB cluster.
+
+learn more here 👉 https://www.mongodb.com/basics/clusters/mongodb-cluster-setup
+

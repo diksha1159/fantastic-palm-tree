@@ -40,3 +40,5 @@ if you are a begineer you might not know dotenv Module
 
 Dotenv is a zero-dependency module that loads environment variables from a . env file into process. env . Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
 
+
+https://coding-boot-camp.github.io/full-stack/mongodb/how-to-set-up-mongodb-atlas

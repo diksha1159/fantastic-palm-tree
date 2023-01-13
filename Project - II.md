@@ -183,5 +183,24 @@ module.exports = router;
 
 ![image](https://user-images.githubusercontent.com/76660222/211158073-6d101451-30f6-4992-b854-3d0fac3cbe3c.png)
 
+##### MONGODB DATABASE
+
+* A database is required where data will be stored. For this we will make use of mLab. Sign up for a shared clusters free account, Sign up on [https://www.mongodb.com/atlas-signup-from-mlab](https://www.mongodb.com/atlas-signup-from-mlab). Follow the sign up process, select AWS as the cloud provider, and choose a region.
+* you should see something like this right after you log in
+
+![image](https://user-images.githubusercontent.com/76660222/212305412-25765898-b4e8-41d9-9241-faecb04caf01.png)
+
+![image](https://user-images.githubusercontent.com/76660222/212307048-763fb63a-247e-4de6-89ce-e75e88f10427.png)
+
+![image](https://user-images.githubusercontent.com/76660222/212307676-d3e2a9d5-af36-402e-bbaa-b3502c5480a0.png)
+
+
+* For the purposes of this project, allow access to the MongoDB database from anywhere.
+* Make sure you change the time of deleting the entry from 6 Hours to 1 Week
+* Create a MongoDB database and collection inside mLab
+
+
+
+![image](https://user-images.githubusercontent.com/76660222/212309255-956fd2af-04b8-462c-a315-bfbc92fc9e51.png)
 
 

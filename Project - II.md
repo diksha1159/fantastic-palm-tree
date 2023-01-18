@@ -213,5 +213,7 @@ module.exports = router;
 
 
 
+* Next, in the index.js file, we specified **process.env** to access environment variables, but we are yet to create the file. Now, create a file in the **Todo** directory and name it **.env** To do this type:
+* Then add the connection string to access the database in it, just as below: `DB = 'mongodb+srv://<username>:<password>@<network-address>/<dbname>?retryWrites=true&w=majority'`
 
 
